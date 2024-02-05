@@ -1,0 +1,57 @@
+{
+  "name": "@knxcloud/lowcode-vue-renderer",
+  "main": "./dist/vue-renderer.js",
+  "module": "./dist/vue-renderer.mjs",
+  "typings": "./dist/vue-renderer.d.ts",
+  "version": "1.6.0",
+  "keywords": [
+    "vue",
+    "lowcode",
+    "lowcode-engine"
+  ],
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build && vite build -c vite.config.umd.ts",
+    "test": "vitest --run",
+    "test:coverage": "pnpm run test --coverage",
+    "lint:type": "tsc -p ./tsconfig.build.json --noEmit",
+    "prepack": "pnpm test && pnpm build"
+  },
+  "dependencies": {
+    "@knxcloud/lowcode-data-source": "workspace:*",
+    "@knxcloud/lowcode-hooks": "workspace:*",
+    "@knxcloud/lowcode-utils": "workspace:*",
+    "intl-messageformat": "^10.5.0",
+    "vue-router": "^4.2.4"
+  },
+  "devDependencies": {
+    "@alilc/lowcode-types": "^1.1.10",
+    "@vitejs/plugin-vue-jsx": "^3.0.2",
+    "vite": "^4.4.9",
+    "vite-plugin-lib-types": "^2.0.4",
+    "vue": "^3.3.4"
+  },
+  "peerDependencies": {
+    "@alilc/lowcode-types": "^1.0.0",
+    "vue": ">= 3.x < 4",
+    "vue-router": ">= 4.x < 5"
+  },
+  "peerDependenciesMeta": {
+    "vue-router": {
+      "optional": true
+    },
+    "@alilc/lowcode-types": {
+      "optional": true
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "http",
+    "url": "https://github.com/KNXCloud/lowcode-engine-vue/tree/main/packages/vue-renderer"
+  }
+}
