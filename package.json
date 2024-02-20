@@ -43,17 +43,17 @@
     "vue": "^3.3.4"
   },
   "lint-staged": {
-    "*.{ts,js}": [
+    "packages/**/*.{ts,js}": [
       "prettier --write",
       "eslint --fix"
     ],
-    "*.json": [
+    "packages/**/*.json": [
       "prettier --write"
     ],
-    "*.{less,css}": [
+    "packages/**/*.{less,css}": [
       "stylelint --fix"
     ]
   },
-  "author": "KNXCloud",
+  "author": "codeteenager",
   "license": "MIT"
 }
