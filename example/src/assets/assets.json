@@ -1,0 +1,29 @@
+{
+  "version": "1.0.6",
+  "packages": [
+    {
+      "package": "@cdlab996/element-lowcode-materials2.7",
+      "version": "1.0.6",
+      "library": "Cdlab996ElementLowcodeMaterials2.7",
+      "urls": [
+        "https://unpkg.com/@cdlab996/element-lowcode-materials2.7@1.0.6/dist/fonts/element-icons.ff18efd1.woff",
+        "https://unpkg.com/@cdlab996/element-lowcode-materials2.7@1.0.6/dist/fonts/element-icons.f1a45d74.ttf",
+        "https://unpkg.com/@cdlab996/element-lowcode-materials2.7@1.0.6/dist/index.css",
+        "https://unpkg.com/@cdlab996/element-lowcode-materials2.7@1.0.6/dist/index.js"
+      ]
+    }
+  ],
+  "components": [
+    {
+      "exportName": "Cdlab996ElementLowcodeMaterials2.7Meta",
+      "url": "https://unpkg.com/@cdlab996/element-lowcode-materials2.7@1.0.6/dist/meta.js",
+      "package": {
+        "npm": "@cdlab996/element-lowcode-materials2.7"
+      }
+    }
+  ],
+  "sort": {
+    "groupList": [],
+    "categoryList": []
+  }
+}

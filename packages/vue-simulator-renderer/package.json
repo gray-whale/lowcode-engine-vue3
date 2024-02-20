@@ -13,7 +13,7 @@
     "dist"
   ],
   "scripts": {
-    "start": "vue-cli-service serve",
+    "start": "vue-cli-service serve --port 9000",
     "build": "vite build && vite build -c vite.config.umd.ts",
     "lint:type": "tsc -p ./tsconfig.json --noEmit",
     "prepack": "pnpm build"

@@ -6,6 +6,7 @@
   },
   "scripts": {
     "start": "pnpm -C packages/vue-simulator-renderer start",
+    "start:app": "cd example && npm run start",
     "build": "pnpm -r build",
     "lint": "pnpm run lint:code && pnpm run lint:type",
     "lint:code": "eslint ./packages/**/*.ts && stylelint ./packages/**/*.less",
