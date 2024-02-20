@@ -258,7 +258,7 @@ export function useLeaf(
         }
 
         if (isDesignMode) {
-          return h('div', `use component[${componentName}] not found`);
+          return h('div', `component[${componentName}] not found`);
         }
 
         comp = {

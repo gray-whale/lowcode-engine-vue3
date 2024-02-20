@@ -156,8 +156,7 @@ init(document.getElementById('lce'), {
 ## 本地调试
 
 ```bash
-git clone git@github.com:KNXCloud/lowcode-engine-vue.git
-cd lowcode-engine-vue
+cd lowcode-engine-vue3
 pnpm install && pnpm -r build
 pnpm start
 ```
