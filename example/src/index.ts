@@ -119,6 +119,6 @@ async function registerPlugins() {
       fetch: createFetchHandler(),
     },
     appHelper,
-    simulatorUrl: ['http://127.0.0.1:9000/vue-simulator-renderer.js', 'http://127.0.0.1:9000/vue-simulator-renderer.css'],
+    simulatorUrl: ['http://127.0.0.1:9001/vue-simulator-renderer.js', 'http://127.0.0.1:9001/vue-simulator-renderer.css'],
   });
 })();

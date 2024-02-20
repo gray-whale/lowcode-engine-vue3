@@ -18,7 +18,7 @@ const EditorInitPlugin = (ctx: IPublicModelPluginContext, options: any) => {
       // 设置物料描述
 
       try {
-        const res = await window.fetch("http://localhost:9001/assets.json");
+        const res = await window.fetch("http://localhost:9000/assets.json");
         const assets = await res.text();
         await material.setAssets(await injectAssets(JSON.parse(assets)));
         const schema = await getProjectSchema(scenarioName);
