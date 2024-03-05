@@ -1,7 +1,7 @@
 {
   "name": "@knxcloud/lowcode-plugin-vue-code-editor",
   "main": "./dist/lowcode-plugin-vue-code-editor.js",
-  "module": "./dist/lowcode-plugin-vue-code-editor.mjs",
+  "module": "./dist/lowcode-plugin-vue-code-editor.js",
   "typings": "./dist/lowcode-plugin-vue-code-editor.d.ts",
   "version": "0.1.2",
   "scripts": {

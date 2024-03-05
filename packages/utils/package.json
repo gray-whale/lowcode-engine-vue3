@@ -1,7 +1,7 @@
 {
   "name": "@knxcloud/lowcode-utils",
   "main": "./dist/lowcode-utils.js",
-  "module": "./dist/lowcode-utils.mjs",
+  "module": "./dist/lowcode-utils.js",
   "typings": "./dist/lowcode-utils.d.ts",
   "version": "1.6.0",
   "keywords": [

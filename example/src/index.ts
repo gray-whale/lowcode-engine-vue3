@@ -19,7 +19,7 @@ import LoadIncrementalAssetsWidgetPlugin from './plugins/plugin-load-incremental
 import SaveSamplePlugin from './plugins/plugin-save-sample';
 import PreviewSamplePlugin from './plugins/plugin-preview-sample';
 import CustomSetterSamplePlugin from './plugins/plugin-custom-setter-sample';
-import CodeEditor from '../../plugins/plugin-vue-code-editor/dist/lowcode-plugin-vue-code-editor';
+import CodeEditor from './plugins/plugin-vue-code-editor/';
 import LogoPlugin from './plugins/plugin-logo';
 import SimulatorLocalePlugin from './plugins/plugin-simulator-locale';
 import lowcodePlugin from './plugins/plugin-lowcode-component';
@@ -93,7 +93,7 @@ async function registerPlugins() {
 
   // await plugins.register(SaveSamplePlugin);
 
-  // await plugins.register(PreviewSamplePlugin);
+  await plugins.register(PreviewSamplePlugin);
 
   await plugins.register(CustomSetterSamplePlugin);
 
