@@ -5,7 +5,7 @@ import {
   isESModule,
   isPromise,
   sleep,
-} from '@knxcloud/lowcode-utils';
+} from '@mfejs/lowcode-utils';
 import type { ComponentPublicInstance } from 'vue';
 import type {
   Router,

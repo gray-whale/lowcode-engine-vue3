@@ -1,5 +1,5 @@
 import type { IPublicTypeContainerSchema } from '@alilc/lowcode-types';
-import type { INode } from '@knxcloud/lowcode-hooks';
+import type { INode } from '@mfejs/lowcode-hooks';
 import { mount } from '@vue/test-utils';
 import { defineComponent, renderSlot } from 'vue';
 import VueRenderer from '../src';
@@ -48,7 +48,7 @@ describe('test for props update', () => {
         fileName: '/',
         componentName: 'Page',
       },
-      { 0: meta }
+      { 0: meta },
     );
     const inst = mount(VueRenderer, {
       props: {

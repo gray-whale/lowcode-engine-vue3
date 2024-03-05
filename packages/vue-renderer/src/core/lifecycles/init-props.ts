@@ -1,10 +1,4 @@
-import {
-  camelCase,
-  isArray,
-  isFunction,
-  isObject,
-  isString,
-} from '@knxcloud/lowcode-utils';
+import { camelCase, isArray, isFunction, isObject, isString } from '@mfejs/lowcode-utils';
 import { ComponentInternalInstance, Prop, PropType, withCtx } from 'vue';
 import {
   warn,

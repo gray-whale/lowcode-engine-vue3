@@ -7,9 +7,9 @@ import {
   RequestHandler,
   WillFetch,
 } from '@alilc/lowcode-types';
-import { DataSourceConfig, createDataSourceEngine } from '@knxcloud/lowcode-data-source';
+import { DataSourceConfig, createDataSourceEngine } from '@mfejs/lowcode-data-source';
 import { AccessTypes, RuntimeScope, SchemaParser, addToScope } from '../utils';
-import { isJSExpression, isJSFunction } from '@knxcloud/lowcode-utils';
+import { isJSExpression, isJSFunction } from '@mfejs/lowcode-utils';
 
 export function create(
   config: InterpretDataSource,

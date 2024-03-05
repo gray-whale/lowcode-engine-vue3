@@ -1,10 +1,4 @@
-import {
-  isFunction,
-  isNil,
-  isObject,
-  isPromise,
-  toString,
-} from '@knxcloud/lowcode-utils';
+import { isFunction, isNil, isObject, isPromise, toString } from '@mfejs/lowcode-utils';
 import { toRaw } from 'vue';
 import {
   AccessTypes,

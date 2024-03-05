@@ -30,7 +30,7 @@ const servicePlugin: ServicePlugin = (api, options) => {
       version: api.service.pkg.version || '',
       destructuring: true,
     } as LowCodeNpmInfo,
-    restOptions.npmInfo
+    restOptions.npmInfo,
   );
 
   const assetsConfig = Object.assign(
@@ -40,15 +40,15 @@ const servicePlugin: ServicePlugin = (api, options) => {
       categories: [],
       builtinAssets: {},
     } as LowCodeAssetsConfig,
-    restOptions.assetsConfig
+    restOptions.assetsConfig,
   );
 
   const libName =
     library ||
     (api.service.pkg.name
       ? api.service.pkg.name
-          .replace(/[/@-](\w)/g, (_: string, $1: string) => $1.toUpperCase())
-          .replace(/^\w/, (s: string) => s.toUpperCase())
+        .replace(/[/@-](\w)/g, (_: string, $1: string) => $1.toUpperCase())
+        .replace(/^\w/, (s: string) => s.toUpperCase())
       : basename(entry).replace(/\.(jsx?|vue)$/, ''));
   const tempDir = api.resolve('node_modules/.lowcode-builder');
   const metaEntryName = '~entry-meta';
@@ -58,7 +58,7 @@ const servicePlugin: ServicePlugin = (api, options) => {
     chunkName: string,
     entryFile: string,
     globalName: string,
-    postfix = ''
+    postfix = '',
   ) {
     const config = api.resolveChainableWebpackConfig();
     if (config.plugins.has('extract-css')) {
@@ -94,8 +94,8 @@ const servicePlugin: ServicePlugin = (api, options) => {
         : [rawConfig.externals]),
       {
         vue: 'var window.Vue',
-        '@knxcloud/lowcode-vue-renderer': 'var window.LCVueRenderer',
-        '@knxcloud/lowcode-vue-simulator-renderer': 'var window.LCVueSimulatorRenderer',
+        '@mfejs/lowcode-vue-renderer': 'var window.LCVueRenderer',
+        '@mfejs/lowcode-vue-simulator-renderer': 'var window.LCVueSimulatorRenderer',
         ...externals,
       },
     ].filter(nonNull);
@@ -115,7 +115,7 @@ const servicePlugin: ServicePlugin = (api, options) => {
         filename: `${entryName}.js`,
         chunkFilename: `${entryName}.[name].js`,
         publicPath: '',
-      }
+      },
     );
 
     return rawConfig;
@@ -197,7 +197,7 @@ const servicePlugin: ServicePlugin = (api, options) => {
           resolve();
         });
       });
-    }
+    },
   );
   api.registerCommand(
     'lowcode:dev',
@@ -212,7 +212,7 @@ const servicePlugin: ServicePlugin = (api, options) => {
           tempDir,
           api.resolve(metaDir),
           npmInfo,
-          `${libName}Meta`
+          `${libName}Meta`,
         ),
       };
       api.chainWebpack((chain) => {
@@ -255,7 +255,7 @@ const servicePlugin: ServicePlugin = (api, options) => {
         chain.module.rule('images').set('type', 'asset/inline').delete('generator');
       });
       return serve.fn(args, rawArgs);
-    }
+    },
   );
 
   const devServer = options.devServer || (options.devServer = {});

@@ -1,6 +1,6 @@
 import type { Router } from 'vue-router';
-import type { Config, I18nMessages } from '@knxcloud/lowcode-vue-renderer';
-import type { DesignMode } from '@knxcloud/lowcode-hooks';
+import type { Config, I18nMessages } from '@mfejs/lowcode-vue-renderer';
+import type { DesignMode } from '@mfejs/lowcode-hooks';
 import type { Component, ComponentPublicInstance, App } from 'vue';
 import type {
   IPublicTypeSimulatorRenderer,

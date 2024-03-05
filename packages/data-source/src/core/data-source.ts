@@ -8,7 +8,7 @@ import {
   MaybyFunc,
 } from './interface';
 import { computed, reactive, ref, shallowRef } from 'vue';
-import { isFunction, isPlainObject, isUndefined } from '@knxcloud/lowcode-utils';
+import { isFunction, isPlainObject, isUndefined } from '@mfejs/lowcode-utils';
 import { fetchRequest } from '../handlers';
 
 export function createDataSource(

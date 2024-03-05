@@ -17,7 +17,7 @@ import vueTypeCode from './types/vue';
 import vueRouterTypeCode from './types/vue-router';
 import { generate } from 'short-uuid';
 import MagicString from 'magic-string';
-import { isFunction } from '@knxcloud/lowcode-utils';
+import { isFunction } from '@mfejs/lowcode-utils';
 import { findOptionNode, parseCode } from './parse';
 import type { IEditorInstance } from '@alilc/lowcode-plugin-base-monaco-editor/lib/helper';
 import { parse } from 'acorn';

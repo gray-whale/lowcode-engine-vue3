@@ -1,4 +1,4 @@
-import { isFunction, isObject } from '@knxcloud/lowcode-utils';
+import { isFunction, isObject } from '@mfejs/lowcode-utils';
 import {
   AccessTypes,
   addToScope,

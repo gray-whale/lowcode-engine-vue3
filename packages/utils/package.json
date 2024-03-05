@@ -1,5 +1,5 @@
 {
-  "name": "@knxcloud/lowcode-utils",
+  "name": "@mfejs/lowcode-utils",
   "main": "./dist/lowcode-utils.js",
   "module": "./dist/lowcode-utils.js",
   "typings": "./dist/lowcode-utils.d.ts",

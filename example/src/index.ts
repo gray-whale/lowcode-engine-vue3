@@ -10,7 +10,7 @@ import ManualPlugin from "@alilc/lowcode-plugin-manual";
 import InjectPlugin from '@alilc/lowcode-plugin-inject';
 import SimulatorResizerPlugin from '@alilc/lowcode-plugin-simulator-select';
 import SetRefPropPlugin from '@alilc/lowcode-plugin-set-ref-prop';
-import { setupHostEnvironment } from '@knxcloud/lowcode-utils';
+import { setupHostEnvironment } from '@mfejs/lowcode-utils';
 
 import EditorInitPlugin from './plugins/plugin-editor-init';
 import ComponentPanelPlugin from './plugins/plugin-component-panel';

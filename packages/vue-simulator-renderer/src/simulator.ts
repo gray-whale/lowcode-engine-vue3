@@ -27,7 +27,7 @@ import {
   LOWCODE_ROUTE_META,
   SchemaParser,
   setupLowCodeRouteGuard,
-} from '@knxcloud/lowcode-vue-renderer';
+} from '@mfejs/lowcode-vue-renderer';
 import {
   AssetLoader,
   buildUtils,
@@ -35,7 +35,7 @@ import {
   getSubComponent,
   exportSchema,
   isArray,
-} from '@knxcloud/lowcode-utils';
+} from '@mfejs/lowcode-utils';
 import { Renderer, SimulatorRendererView } from './simulator-view';
 import { Slot, Leaf, Page } from './buildin-components';
 import { host } from './host';

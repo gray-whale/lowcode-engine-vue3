@@ -7,9 +7,9 @@ import type {
   IPublicTypeSlotSchema,
 } from '@alilc/lowcode-types';
 import * as uuid from 'uuid';
-import { INode } from '@knxcloud/lowcode-hooks';
+import { INode } from '@mfejs/lowcode-hooks';
 import { set, get, cloneDeep } from 'lodash';
-import { isArray, isNodeSchema, isString } from '@knxcloud/lowcode-utils';
+import { isArray, isNodeSchema, isString } from '@mfejs/lowcode-utils';
 import { Ref, shallowRef } from 'vue';
 
 const internalPropsRegexp = /^__(\w+)__$/;

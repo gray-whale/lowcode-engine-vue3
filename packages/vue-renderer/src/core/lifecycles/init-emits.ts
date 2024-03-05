@@ -1,4 +1,4 @@
-import { isArray, isObject } from '@knxcloud/lowcode-utils';
+import { isArray, isObject } from '@mfejs/lowcode-utils';
 import type { RuntimeScope, SchemaParser } from '../../utils';
 
 export function initEmits(

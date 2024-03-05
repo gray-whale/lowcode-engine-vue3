@@ -1,7 +1,7 @@
 import { ref, Suspense, type PropType } from 'vue';
 import type { DocumentInstance, VueSimulatorRenderer } from './interface';
 import { defineComponent, h, renderSlot } from 'vue';
-import LowCodeRenderer from '@knxcloud/lowcode-vue-renderer';
+import LowCodeRenderer from '@mfejs/lowcode-vue-renderer';
 import { RouterView } from 'vue-router';
 
 export const Layout = defineComponent({

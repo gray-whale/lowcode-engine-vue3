@@ -1,5 +1,5 @@
 {
-  "name": "@knxcloud/lowcode-data-source",
+  "name": "@mfejs/lowcode-data-source",
   "version": "1.0.0",
   "main": "dist/lowcode-data-source.js",
   "module": "dist/lowcode-data-source.mjs",
@@ -19,7 +19,7 @@
     "prepack": "pnpm build"
   },
   "dependencies": {
-    "@knxcloud/lowcode-utils": "workspace:*"
+    "@mfejs/lowcode-utils": "workspace:*"
   },
   "devDependencies": {
     "@alilc/lowcode-types": "^1.1.10",

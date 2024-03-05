@@ -1,4 +1,4 @@
-import { isFunction } from '@knxcloud/lowcode-utils';
+import { isFunction } from '@mfejs/lowcode-utils';
 import { type RuntimeScope, type SchemaParser } from '../../utils';
 
 export function beforeCreate(

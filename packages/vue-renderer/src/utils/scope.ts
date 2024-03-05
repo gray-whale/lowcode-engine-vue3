@@ -1,10 +1,10 @@
 import { isReactive, proxyRefs, type ComponentPublicInstance } from 'vue';
 import type { MaybeArray } from './array';
 import { isProxy, reactive } from 'vue';
-import { isBoolean, isObject, isUndefined } from '@knxcloud/lowcode-utils';
+import { isBoolean, isObject, isUndefined } from '@mfejs/lowcode-utils';
 import { warn } from './warn';
 import { SchemaParser } from './parse';
-import { DataSource } from '@knxcloud/lowcode-data-source';
+import { DataSource } from '@mfejs/lowcode-data-source';
 
 export interface BlockScope {
   [x: string | symbol]: unknown;

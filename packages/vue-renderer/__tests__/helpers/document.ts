@@ -1,4 +1,4 @@
-import { INode } from '@knxcloud/lowcode-hooks';
+import { INode } from '@mfejs/lowcode-hooks';
 import {
   IPublicTypeContainerSchema,
   IPublicModelDocumentModel,
@@ -6,7 +6,7 @@ import {
 } from '@alilc/lowcode-types';
 import { get } from 'lodash';
 import { createNode } from './node';
-import { isArray } from '@knxcloud/lowcode-utils';
+import { isArray } from '@mfejs/lowcode-utils';
 import { shallowRef } from 'vue';
 
 export function createDocument(

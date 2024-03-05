@@ -1,5 +1,5 @@
 {
-  "name": "@knxcloud/lowcode-vue-simulator-renderer",
+  "name": "@mfejs/lowcode-vue-simulator-renderer",
   "main": "./dist/vue-simulator-renderer.js",
   "module": "./dist/vue-simulator-renderer.mjs",
   "typings": "./dist/vue-simulator-renderer.d.ts",
@@ -19,9 +19,9 @@
     "prepack": "pnpm build"
   },
   "dependencies": {
-    "@knxcloud/lowcode-hooks": "workspace:*",
-    "@knxcloud/lowcode-utils": "workspace:*",
-    "@knxcloud/lowcode-vue-renderer": "workspace:*"
+    "@mfejs/lowcode-hooks": "workspace:*",
+    "@mfejs/lowcode-utils": "workspace:*",
+    "@mfejs/lowcode-vue-renderer": "workspace:*"
   },
   "devDependencies": {
     "@alilc/lowcode-designer": "^1.1.10",

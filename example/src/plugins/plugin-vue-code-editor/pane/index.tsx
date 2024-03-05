@@ -11,7 +11,7 @@ import {
   isJSExpression,
   isJSFunction,
   isObject,
-} from '@knxcloud/lowcode-utils';
+} from '@mfejs/lowcode-utils';
 import { Tab } from '@alifd/next';
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { SaveIcon, JsEditor } from '../components';

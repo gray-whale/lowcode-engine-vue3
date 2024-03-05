@@ -4,7 +4,7 @@ import { isVNode } from 'vue';
 import { isVNodeHTMLElement } from './comp-node';
 import { isDomNode, isEmptyNode } from './check-node';
 import { getClientRects } from './get-client-rects';
-import { isArray } from '@knxcloud/lowcode-utils';
+import { isArray } from '@mfejs/lowcode-utils';
 
 export function findDOMNodes(instance: ComponentInstance) {
   const els: (Element | Text)[] = [];

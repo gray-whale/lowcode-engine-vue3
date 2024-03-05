@@ -19,9 +19,9 @@ import {
   useLeaf,
   type SlotSchemaMap,
 } from '../use';
-import { useRendererContext } from '@knxcloud/lowcode-hooks';
+import { useRendererContext } from '@mfejs/lowcode-hooks';
 import type { IPublicTypeNodeSchema } from '@alilc/lowcode-types';
-import { debounce, exportSchema, isJSSlot } from '@knxcloud/lowcode-utils';
+import { debounce, exportSchema, isJSSlot } from '@mfejs/lowcode-utils';
 
 const HOC_NODE_KEY: InjectionKey<{ rerenderSlots: () => void }> = Symbol('hocNode');
 const useHocNode = (rerenderSlots: () => void) => {
