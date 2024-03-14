@@ -2,7 +2,7 @@
   "name": "@mfejs/lowcode-hooks",
   "version": "1.6.0",
   "main": "dist/lowcode-hooks.js",
-  "module": "dist/lowcode-hooks.mjs",
+  "module": "dist/lowcode-hooks.js",
   "typings": "dist/lowcode-hooks.d.ts",
   "keywords": [
     "vue",

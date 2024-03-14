@@ -57,11 +57,11 @@ const init = async () => {
     ]);
   });
   app.mount('#lce-container');
-  app.config.errorHandler = (err) => {
-    /* 处理错误 */
-    console.log("打印错误===");
-    console.log(err);
-  }
+  // app.config.errorHandler = (err) => {
+  //   /* 处理错误 */
+  //   console.log("打印错误===");
+  //   console.log(err);
+  // }
 })();
 // import ReactDOM from 'react-dom';
 // import React, { useState } from 'react';

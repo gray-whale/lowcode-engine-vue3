@@ -16,7 +16,10 @@
     "@alilc/lowcode-engine": "var window.AliLowCodeEngine",
     "@alilc/lowcode-engine-ext": "var window.AliLowCodeEngineExt",
     "moment": "var window.moment",
-    "lodash": "var window._"
+    "lodash": "var window._",
+    "vue": "var window.Vue",
+    "@mfejs/lowcode-vue-renderer": "var window.LCVueRenderer",
+    "@mfejs/lowcode-vue-simulator-renderer": "var window.LCVueSimulatorRenderer"
   },
   "plugins": [
     ["build-plugin-react-app"],
