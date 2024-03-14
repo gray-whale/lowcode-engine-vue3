@@ -17,7 +17,7 @@ import ComponentPanelPlugin from './plugins/plugin-component-panel';
 import DefaultSettersRegistryPlugin from './plugins/plugin-default-setters-registry';
 import LoadIncrementalAssetsWidgetPlugin from './plugins/plugin-load-incremental-assets-widget';
 import SaveSamplePlugin from './plugins/plugin-save-sample';
-import PreviewSamplePlugin from './plugins/plugin-preview-sample';
+import PreviewPlugin from './plugins/plugin-preview-sample';
 import CustomSetterSamplePlugin from './plugins/plugin-custom-setter-sample';
 import CodeEditor from './plugins/plugin-vue-code-editor/';
 import LogoPlugin from './plugins/plugin-logo';
@@ -93,7 +93,7 @@ async function registerPlugins() {
 
   // await plugins.register(SaveSamplePlugin);
 
-  await plugins.register(PreviewSamplePlugin);
+  await plugins.register(PreviewPlugin);
 
   await plugins.register(CustomSetterSamplePlugin);
 

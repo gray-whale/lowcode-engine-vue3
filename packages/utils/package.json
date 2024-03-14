@@ -25,7 +25,7 @@
   },
   "peerDependencies": {
     "@alilc/lowcode-types": "^1.0.0",
-    "vue": "^3.0.0"
+    "vue": "^3.3.4"
   },
   "peerDependenciesMeta": {
     "vue": {

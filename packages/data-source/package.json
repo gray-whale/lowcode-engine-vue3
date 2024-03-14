@@ -2,7 +2,7 @@
   "name": "@mfejs/lowcode-data-source",
   "version": "1.0.0",
   "main": "dist/lowcode-data-source.js",
-  "module": "dist/lowcode-data-source.mjs",
+  "module": "dist/lowcode-data-source.js",
   "typings": "dist/lowcode-data-source.d.ts",
   "keywords": [
     "vue",
@@ -29,7 +29,7 @@
   },
   "peerDependencies": {
     "@alilc/lowcode-types": "^1.0.0",
-    "vue": "^3.0.0"
+    "vue": "^3.3.4"
   },
   "publishConfig": {
     "access": "public",

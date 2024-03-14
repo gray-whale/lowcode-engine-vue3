@@ -1,20 +1,19 @@
 import { IPublicModelPluginContext } from '@alilc/lowcode-types';
 import { Button } from '@alifd/next';
-import {
-  saveSchema,
-} from '../../services/mockService';
+import { material, project } from '@alilc/lowcode-engine';
+import { IPublicEnumTransformStage } from '@alilc/lowcode-types';
+import { filterPackages } from '@alilc/lowcode-plugin-inject'
+import { Message } from '@alifd/next';
 
-// 保存功能示例
-const PreviewSamplePlugin = (ctx: IPublicModelPluginContext) => {
+// 预览
+const PreviewPlugin = (ctx: IPublicModelPluginContext) => {
   return {
     async init() {
       const { skeleton, config } = ctx;
       const doPreview = () => {
-        const scenarioName = config.get('scenarioName');
-        saveSchema(scenarioName);
+        saveSchema();
         setTimeout(() => {
-          const search = location.search ? `${location.search}&scenarioName=${scenarioName}` : `?scenarioName=${scenarioName}`;
-          window.open(`./preview.html${search}`);
+          window.open('./preview.html');
         }, 500);
       };
       skeleton.add({
@@ -33,8 +32,23 @@ const PreviewSamplePlugin = (ctx: IPublicModelPluginContext) => {
     },
   };
 }
-PreviewSamplePlugin.pluginName = 'PreviewSamplePlugin';
-PreviewSamplePlugin.meta = {
+
+export const saveSchema = async () => {
+  window.localStorage.setItem(
+    "projectSchema",
+    JSON.stringify(project.exportSchema(IPublicEnumTransformStage.Save))
+  );
+
+  const packages = await filterPackages(material.getAssets().packages);
+  window.localStorage.setItem(
+    'packages',
+    JSON.stringify(packages),
+  );
+  Message.success('成功保存到本地');
+};
+
+PreviewPlugin.pluginName = 'PreviewPlugin';
+PreviewPlugin.meta = {
   dependencies: ['EditorInitPlugin'],
 };
-export default PreviewSamplePlugin;
+export default PreviewPlugin;
