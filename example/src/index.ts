@@ -31,23 +31,10 @@ async function registerPlugins() {
 
   await plugins.register(EditorInitPlugin, {
     scenarioName: 'general',
-    displayName: '前端辅助工具',
+    displayName: 'Vue3组件库',
     info: {
-      urls: [
-        {
-          key: '设计器',
-          value: 'https://github.com/alibaba/lowcode-demo/tree/main/demo-general',
-        },
-        {
-          key: 'fusion-ui 物料',
-          value: 'https://github.com/alibaba/lowcode-materials/tree/main/packages/fusion-ui',
-        },
-        {
-          key: 'fusion 物料',
-          value: 'https://github.com/alibaba/lowcode-materials/tree/main/packages/fusion-lowcode-materials',
-        }
-      ],
-    },
+      github: "http://www.github.com/gray-whale/"
+    }
   });
 
   // 设置内置 setter 和事件绑定、插件绑定面板

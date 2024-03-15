@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: flex-end;
+  align-items: center;
   width: 300px;
   .logo {
     display: block;
@@ -19,7 +19,9 @@
     margin-right: 5px;
     font-size: 15px;
   }
-  .info-dropdown {
+  .github {
     display: block;
+    height: 18px;
+    width: 18px;
   }
 }
